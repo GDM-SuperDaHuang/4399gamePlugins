@@ -10,7 +10,6 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws AWTException, IOException {
         Robot robot1 = new Robot();
-
         //�ӳ�5�뿪ʼ���нű�
         robot1.delay(5000);
 
