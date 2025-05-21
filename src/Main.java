@@ -11,40 +11,40 @@ public class Main {
     public static void main(String[] args) throws AWTException, IOException {
         Robot robot1 = new Robot();
 
-        //ÑÓ³Ù5Ãë¿ªÊ¼ÔËÐÐ½Å±¾
+        //ï¿½Ó³ï¿½5ï¿½ë¿ªÊ¼ï¿½ï¿½ï¿½Ð½Å±ï¿½
         robot1.delay(5000);
 
-        //ËÀÑ­»·
+        //ï¿½ï¿½Ñ­ï¿½ï¿½
         while (true) {
-            //540ÊÇµÚÒ»¸ö¸ñÖÐ¼äµÄºá×ø±ê£¬Ã¿¼Ó124µ½µÚ¶þ¸ö£¬µÚÈý¸ö£¬µÚËÄ¸ö¸ñ¡£
+            //540ï¿½Çµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½Äºï¿½ï¿½ï¿½ï¿½ê£¬Ã¿ï¿½ï¿½124ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
             for (int i = 540; i < 1015; i += 124) {
-                Color color = robot1.getPixelColor(i, 574);//485ÊÇ×Ý×ø±ê±£³Ö²»±ä
-                System.out.println("==="+color);//´òÓ¡ÑÕÉ«£¬´Ë²½Öè¿ÉÒÔÊ¡ÂÔ
+                Color color = robot1.getPixelColor(i, 574);//485ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê±£ï¿½Ö²ï¿½ï¿½ï¿½
+                System.out.println("==="+color);//ï¿½ï¿½Ó¡ï¿½ï¿½É«ï¿½ï¿½ï¿½Ë²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½ï¿½
 
-                //µ±ÑÕÉ«µÄRÖµÎª51Ê±£¬½øÐÐÅÐ¶Ï
+                //ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½RÖµÎª51Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
                 if (color.getRed() == 51) {
 
-                    //ºá×ø±êÎª460£¬°´ÏÂD¼ü
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª460ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Dï¿½ï¿½
                     if (i == 540) {
 
                         robot1.keyPress(KeyEvent.VK_D);
 
                         robot1.keyRelease(KeyEvent.VK_D);
-                        //ºá×ø±êÎª560£¬°´ÏÂF
+                        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª560ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½F
                     } else if (i == 664) {
 
                         robot1.keyPress(KeyEvent.VK_F);
 
                         robot1.keyRelease(KeyEvent.VK_F);
 
-                        //ºá×ø±êÎª660£¬°´ÏÂJ
+                        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª660ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½J
                     } else if (i == 788) {
 
                         robot1.keyPress(KeyEvent.VK_J);
 
                         robot1.keyRelease(KeyEvent.VK_J);
 
-                        //ºá×ø±êÎª760£¬°´ÏÂK
+                        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª760ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½K
 
                     } else if (i == 912) {
                         robot1.keyPress(KeyEvent.VK_K);
@@ -53,7 +53,7 @@ public class Main {
 
                 }
 
-                robot1.delay(1);//ÑÓ³Ù1ms£¬¿ªÊ¼ÏÂÒ»ÂÖÑ­»·£¨¿ÉÊ¡ÂÔ£©
+                robot1.delay(1);//ï¿½Ó³ï¿½1msï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Ò»ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½Ô£ï¿½
 
             }
 
